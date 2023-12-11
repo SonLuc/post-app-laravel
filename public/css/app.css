@@ -1,0 +1,216 @@
+
+
+:root{
+  font-size: 16px;
+  --primary-color: #2662f9;
+  --primary-dark-color: #1c4cde;
+  --secondary-color: #f9f9f9;
+  --dark-color: #232323;
+  --light-color: #f4f4f4;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #f2f2f2;
+  font-family: 'Nunito';
+}
+
+input, textarea, button{
+  font-family: 'Nunito';
+}
+
+.navbar-brand{
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: var(--primary-color);
+}
+
+.navbar-brand:hover{
+  color: var(--primary-dark-color);
+}
+
+.nav-link{
+  color: var(--dark-color);
+  font-weight: 500;
+  border-radius: 0.4rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.nav-link:hover{
+  color: var(--primary-color);
+  background-color: #f5f5f5;
+}
+
+.navbar{
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.btn{
+  font-size: 0.9rem;
+  font-weight: 500;
+  border-radius: 0.4rem;
+  border: 1px solid var(--primary-color);
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-blog{
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.btn-blog:hover{
+  color: #fff;
+  background-color: var(--primary-dark-color);
+}
+
+.btn-blog-2{
+  background-color: #fff;
+  color: var(--primary-color);
+}
+
+.btn-blog-2:hover{
+  color: #fff;
+  background-color: var(--primary-color);
+}
+
+.btn-edit{
+  background-color: #ffe100;
+  border-color: #ffe100;
+  color: #9e8c00;
+}
+
+.btn-edit:hover{
+  background-color: #9e8c00;
+  border-color: #9e8c00;
+  color: #ffe100;
+}
+
+.btn-delete{
+  background-color: #ff4d4d;
+  border-color: #ff4d4d;
+  color: #7f0000;
+}
+
+.btn-delete:hover{
+  background-color: #7f0000;
+  border-color: #7f0000;
+  color: #ff4d4d;
+}
+
+.main{
+  padding: 2rem 0;
+}
+
+.main__title{
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--dark-color);
+}
+
+.card-title{
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--dark-color);
+}
+
+.card-text{
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--dark-color);
+  /* Para que no se muestre todo el texto y muestre "..."*/
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* Número de líneas a mostrar */
+  -webkit-box-orient: vertical;
+}
+
+.img-overlay{
+  background-color: #000;
+}
+
+.card-img-top{
+  height: 10rem;
+  object-fit: cover;
+  transition: all 0.2s ease-in-out;
+  opacity: 0.8;
+}
+
+.card-img-top:hover{
+  opacity: 1;
+}
+
+.banner-container{
+  height: 20rem;
+  overflow: hidden;
+  background-color: #000;
+}
+
+.banner{
+  aspect-ratio: 16/3;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  opacity: 0.7;
+}
+
+.main-section{
+  margin-top: 2rem;
+}
+
+.post-container-text{
+  background-color: #fff;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+}
+
+.post-title{
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--dark-color);
+}
+
+.post-text{
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--dark-color);
+  text-align: justify;
+  line-height: 1.5;
+}
+
+/* FORM */
+.form{
+  background-color: #fff;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+}
+
+.form-control{
+  border: 2px solid #bebebe;
+  border-radius: 0.3rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--dark-color);
+  transition: all 0.2s ease-in-out;
+}
+
+.form-label{
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--dark-color);
+}
+
+.form-control:focus{
+  border-color: var(--primary-color);
+  box-shadow: none;
+}
+
+.form-control::placeholder{
+  color: #bebebe;
+}
