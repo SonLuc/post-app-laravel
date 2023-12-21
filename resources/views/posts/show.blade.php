@@ -1,7 +1,7 @@
 @extends('post')
 @section('main')
   <div class="banner-container">
-    <img class="banner" src="{{ asset($post->image) }}" alt="asdsa">
+    <img class="banner" src="{{ asset($post->image ?? 'img/laravel-logo.png' ) }}" alt="Post Image">
   </div>
   <section class="main-section container">
     <div class="row">

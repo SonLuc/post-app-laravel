@@ -1,6 +1,6 @@
 @extends('crud')
 @section('content')
-  <h1 class="main__title">Crea una nueva públicación</h1>
+  <h1 class="main__title">Crea una nueva publicación</h1>
   <div class="form-container">
     <form class="form" action="{{ route('create-post') }}" method="post" enctype="multipart/form-data">
       @csrf
@@ -13,6 +13,10 @@
       @endif
 
       @error('title')
+      <h6 class="alert alert-danger">{{ $message }}</h6>
+      @enderror
+
+      @error('body')
       <h6 class="alert alert-danger">{{ $message }}</h6>
       @enderror
 
